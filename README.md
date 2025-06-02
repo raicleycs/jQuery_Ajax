@@ -43,6 +43,9 @@
 
 
 ## Como executar o projeto
+<table>
+  <td>
+    
 
 ### Pré-requisitos
 <table>
@@ -60,13 +63,14 @@
 
 ### Passos
 Clone este repositório ou copie os arquivos para sua máquina.
+```https://github.com/raicleycs/jQuery_Ajax.git```
 
-Instale o JSON Server globalmente:
+Instale o JSON Server globalmente na sua máquina:
 
 ```
 npm install -g json-server
 ```
-Crie um arquivo db.json com o seguinte conteúdo inicial:
+Crie um arquivo db.json com a seguinte estrutura:
 
 ```
 {
@@ -76,56 +80,72 @@ Crie um arquivo db.json com o seguinte conteúdo inicial:
   ]
 }
 ```
+Vá para a pasta que contem o arquivo ```db.json```
+```
+cd db
+```
 Execute o JSON Server na porta 3000:
 
 ```
 json-server --watch db.json --port 3000
 ```
-Abra o arquivo index.html no navegador.
 
-Use o formulário para criar ou editar usuários.
+- Abra o arquivo index.html no navegador.
 
-Use os botões "Editar" e "Excluir" para modificar os usuários listados.
+- Use o formulário para criar ou editar usuários.
+
+- Use os botões "Editar" e "Excluir" para modificar os usuários listados.
+  
+  </td>
+</table>
 
 ## Estrutura dos arquivos
-index.html — Página principal com formulário e tabela para listar usuários.
+<table>
+  <td>
+    
+- index.html — Página principal com formulário e tabela para listar usuários.
 
-app.js — Script JavaScript que contém toda a lógica do CRUD usando jQuery e AJAX.
+- app.js — Script JavaScript que contém toda a lógica do CRUD usando jQuery e AJAX.
 
-db.json — Arquivo para o JSON Server com dados iniciais (não está no repositório, deve ser criado localmente).
+- db.json — Arquivo para o JSON Server com dados iniciais (tem um exemplo no repositório no repositório ``` db/db.json ```).
 
-style.css - Estilização da página principal.
+- style.css - Estilização da página principal.
+
+  </td>
+</table>
 
 ## Explicação rápida do código
-Listagem: Ao carregar a página, os usuários são carregados via AJAX (GET /users) e exibidos na tabela.
+<table>
+  <td>
+    
+- Listagem: Ao carregar a página, os usuários são carregados via AJAX (GET /users) e exibidos na tabela.
 
-Criar: Envio de dados via AJAX (POST /users) a partir do formulário.
+- Criar: Envio de dados via AJAX (POST /users) a partir do formulário.
 
-Editar: Buscar usuário pelo ID (GET /users/:id) e preencher o formulário para edição.
+- Editar: Buscar usuário pelo ID (GET /users/:id) e preencher o formulário para edição.
 
-Atualizar: Envio dos dados atualizados via AJAX (PUT /users/:id).
+- Atualizar: Envio dos dados atualizados via AJAX (PUT /users/:id).
 
-Excluir: Exclusão do usuário via AJAX (DELETE /users/:id).
+- Excluir: Exclusão do usuário via AJAX (DELETE /users/:id).
 
-Mensagens aparecem após cada operação para informar sucesso ou erro.
+- Mensagens aparecem após cada operação para informar sucesso ou erro.
 
-Próximos passos / melhorias sugeridas
-Validação mais robusta de campos.
+  </td>
+</table>
 
-## Implementar filtros e busca.
+> [!TIP] 
+> ## Proposta de melhorias para praticar 
+> - Adicionar paginação para grandes volumes de dados.
+> - Melhorar interface com frameworks CSS como Bootstrap.
+> - Consumir APIs reais públicas para aprendizado prático.
+> - Incluir autenticação e proteção das rotas.
 
-Adicionar paginação para grandes volumes de dados.
-
-Melhorar interface com frameworks CSS como Bootstrap.
-
-Consumir APIs reais públicas para aprendizado prático.
-
-Incluir autenticação e proteção das rotas.
 
 # Referências
-jQuery AJAX Documentation
+[Link Text](#sample-section).
+- jQuery AJAX Documentation
 
-JSON Server GitHub
+- JSON Server GitHub
 
-JSONPlaceholder API (Exemplo)
+- JSONPlaceholder API (Exemplo)
 
