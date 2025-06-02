@@ -1,3 +1,125 @@
+> [!WARNING]
+> # English
+
+# CRUD with jQuery and AJAX
+<table>
+<td>
+This project demonstrates how to build a simple web application that performs CRUD operations (Create, Read, Update, Delete) using jQuery for DOM manipulation and AJAX calls to interact with a RESTful API.   
+</td>
+</table>
+
+> [!IMPORTANT]
+> ## Features 
+>- List registered users
+>- Create new user
+>- Edit existing user
+>- Delete user
+>- Interface updates without page reload (AJAX
+>- Visual feedback for operations (success/error messages)
+>## Technologies Used
+> - HTML5
+> - CSS3 (for layout)
+> - JavaScript (jQuery 3.6.0)
+> - JSON Server (REST API for testing)
+
+## How to Run the Project
+<table>
+  <td>
+    
+### Prerequisites
+
+- Node.js installed (to run JSON Server)
+
+- Code editor (VSCode, Sublime, etc.)
+
+- Web browser (Chrome, Firefox, Edge)
+    
+
+
+### Steps
+Clone this repository or copy the files to your machine:
+```
+https://github.com/raicleycs/jQuery_Ajax.git
+```
+
+Install JSON Server globally:
+
+```
+npm install -g json-server
+```
+Create a file named db.json with the following content:
+```
+{
+  "users": [
+    { "id": 1, "name": "João", "email": "joao@example.com" },
+    { "id": 2, "name": "Maria", "email": "maria@example.com" }
+  ]
+}
+```
+Navigate to the folder containing db.json: ```db.json```
+```
+cd db
+```
+Run JSON Server on port 3000:
+
+```
+json-server --watch db.json --port 3000
+```
+
+- Open the index.html file in your browser.
+
+- Use the form to create or edit users.
+
+- Use the "Edit" and "Delete" buttons to modify the listed users.
+  
+  </td>
+</table>
+
+## File Structure
+<table>
+  <td>
+    
+- [x] index.html — Main page with form and table to list users
+
+- [x] app.js — JavaScript file containing all CRUD logic using jQuery and AJAX
+
+- [x]  db.json — JSON Server file with initial data (see example in db/db.json) ``` db/db.json ```).
+
+- [x]  style.css - Page styling
+
+  </td>
+</table>
+
+> [!NOTE]
+> ## Code Explanation
+> - List: On page load, users are fetched using AJAX (GET /users) and displayed in the table
+> - Create: Form data is sent via AJAX (POST /users)
+> - Edit: User is fetched by ID (GET /users/:id) and form is pre-filled
+> - Update: Updated data sent via AJAX (PUT /users/:id)
+> - Delete: User deleted via AJAX (DELETE /users/:id)
+> - Success/error messages are shown after each operation
+
+
+> [!TIP] 
+> ## Suggested Improvements for Practice
+> - Add pagination for large datasets
+> - Enhance UI with CSS frameworks like Bootstrap
+> - Integrate real public APIs for hands-on learning
+> - Add authentication and route protection
+
+
+# References
+- [jQuery AJAX Documentation](https://api.jquery.com/jquery.ajax/)
+- [JSON Server GitHub](https://github.com/typicode/json-server)
+- [JSONPlaceholder API](https://jsonplaceholder.typicode.com/)
+
+
+<br>
+<br>
+<br>
+
+> [!WARNING]
+> # Português 
 # CRUD com jQuery e AJAX
 <table>
 <td>
