@@ -142,10 +142,7 @@ json-server --watch db.json --port 3000
 
 
 # Referências
-[Link Text](#sample-section).
-- jQuery AJAX Documentation
-
-- JSON Server GitHub
-
-- JSONPlaceholder API (Exemplo)
+- [jQuery AJAX Documentation](https://api.jquery.com/jquery.ajax/)
+- [JSON Server GitHub](https://github.com/typicode/json-server)
+- [JSONPlaceholder API](https://jsonplaceholder.typicode.com/)
 
