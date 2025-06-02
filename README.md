@@ -38,7 +38,9 @@
 
 ### Passos
 Clone este repositório ou copie os arquivos para sua máquina.
-```https://github.com/raicleycs/jQuery_Ajax.git```
+```
+https://github.com/raicleycs/jQuery_Ajax.git
+```
 
 Instale o JSON Server globalmente na sua máquina:
 
