@@ -7,40 +7,19 @@
 </td>
 </table>
 
-
-## Funcionalidades
-<table>
-  <td>
-    
-- Listar usuários cadastrados
-
-- Criar novo usuário
-
-- Editar usuário existente
-
-- Excluir usuário
-
-- Atualização da interface sem recarregar a página (AJAX)
-
-- Feedback visual para operações (mensagens de sucesso/erro)
-  </td>
-</table>
-
-
-## Tecnologias Utilizadas
-<table>
-  <td>
-    
-- HTML5
-
-- CSS3 (para layout)
-
-- JavaScript (jQuery 3.6.0)
-
-- JSON Server (API REST para testes)
-  </td>
-</table>
-
+> [!IMPORTANT]
+> ## Funcionalidades 
+>- Listar usuários cadastrados
+>- Criar novo usuário
+>- Editar usuário existente
+>- Excluir usuário
+>- Atualização da interface sem recarregar a página (AJAX)
+>- Feedback visual para operações (mensagens de sucesso/erro)
+>## Tecnologias Utilizadas
+> - HTML5
+> - CSS3 (para layout)
+> - JavaScript (jQuery 3.6.0)
+> - JSON Server (API REST para testes)
 
 ## Como executar o projeto
 <table>
@@ -48,17 +27,13 @@
     
 
 ### Pré-requisitos
-<table>
-  <td>
-    
+
 - Node.js instalado (para rodar o JSON Server)
 
 - Editor de código (VSCode, Sublime, etc.)
 
 - Navegador (Chrome, Firefox, Edge)
     
-  </td>
-</table>
 
 
 ### Passos
@@ -103,35 +78,26 @@ json-server --watch db.json --port 3000
 <table>
   <td>
     
-- index.html — Página principal com formulário e tabela para listar usuários.
+- [x] index.html — Página principal com formulário e tabela para listar usuários.
 
-- app.js — Script JavaScript que contém toda a lógica do CRUD usando jQuery e AJAX.
+- [x] app.js — Script JavaScript que contém toda a lógica do CRUD usando jQuery e AJAX.
 
-- db.json — Arquivo para o JSON Server com dados iniciais (tem um exemplo no repositório no repositório ``` db/db.json ```).
+- [x]  db.json — Arquivo para o JSON Server com dados iniciais (tem um exemplo no repositório no repositório ``` db/db.json ```).
 
-- style.css - Estilização da página principal.
-
-  </td>
-</table>
-
-## Explicação rápida do código
-<table>
-  <td>
-    
-- Listagem: Ao carregar a página, os usuários são carregados via AJAX (GET /users) e exibidos na tabela.
-
-- Criar: Envio de dados via AJAX (POST /users) a partir do formulário.
-
-- Editar: Buscar usuário pelo ID (GET /users/:id) e preencher o formulário para edição.
-
-- Atualizar: Envio dos dados atualizados via AJAX (PUT /users/:id).
-
-- Excluir: Exclusão do usuário via AJAX (DELETE /users/:id).
-
-- Mensagens aparecem após cada operação para informar sucesso ou erro.
+- [x]  style.css - Estilização da página principal.
 
   </td>
 </table>
+
+> [!NOTE]
+> ## Explicação do código
+> - Listagem: Ao carregar a página, os usuários são carregados via AJAX (GET /users) e exibidos na tabela.
+> - Criar: Envio de dados via AJAX (POST /users) a partir do formulário.
+> - Editar: Buscar usuário pelo ID (GET /users/:id) e preencher o formulário para edição.
+> - Atualizar: Envio dos dados atualizados via AJAX (PUT /users/:id).
+> - Excluir: Exclusão do usuário via AJAX (DELETE /users/:id).
+> - Mensagens aparecem após cada operação para informar sucesso ou erro.
+
 
 > [!TIP] 
 > ## Proposta de melhorias para praticar 
