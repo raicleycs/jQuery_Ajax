@@ -1,37 +1,62 @@
 # CRUD com jQuery e AJAX
-Este projeto demonstra como criar uma aplicação web simples que realiza operações CRUD (Criar, Ler, Atualizar, Excluir) utilizando jQuery para manipulação do DOM e chamadas AJAX para consumir uma API RESTful.
+<table>
+<td>
+
+  Este projeto demonstra como criar uma aplicação web simples que realiza operações CRUD (Criar, Ler, Atualizar, Excluir) utilizando jQuery para manipulação do DOM e chamadas AJAX para consumir uma API RESTful.    
+
+</td>
+</table>
+
 
 ## Funcionalidades
-Listar usuários cadastrados
+<table>
+  <td>
+    
+- Listar usuários cadastrados
 
-Criar novo usuário
+- Criar novo usuário
 
-Editar usuário existente
+- Editar usuário existente
 
-Excluir usuário
+- Excluir usuário
 
-Atualização da interface sem recarregar a página (AJAX)
+- Atualização da interface sem recarregar a página (AJAX)
 
-Feedback visual para operações (mensagens de sucesso/erro)
+- Feedback visual para operações (mensagens de sucesso/erro)
+  </td>
+</table>
+
 
 ## Tecnologias Utilizadas
+<table>
+  <td>
+    
+- HTML5
 
-HTML5
+- CSS3 (para layout)
 
-CSS3 (básico para layout)
+- JavaScript (jQuery 3.6.0)
 
-JavaScript (jQuery 3.6.0)
+- JSON Server (API REST para testes)
+  </td>
+</table>
 
-JSON Server (API REST fake para testes)
 
 ## Como executar o projeto
 
 ### Pré-requisitos
-Node.js instalado (para rodar o JSON Server)
+<table>
+  <td>
+    
+- Node.js instalado (para rodar o JSON Server)
 
-Editor de código (VSCode, Sublime, etc.)
+- Editor de código (VSCode, Sublime, etc.)
 
-Navegador (Chrome, Firefox, Edge)
+- Navegador (Chrome, Firefox, Edge)
+    
+  </td>
+</table>
+
 
 ### Passos
 Clone este repositório ou copie os arquivos para sua máquina.
